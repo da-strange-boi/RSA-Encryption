@@ -139,7 +139,7 @@ public class RSA {
 		
 		return keys;
 		
-		// Private: P, Q, Ø, D
+		// Private: P, Q, φ, D
 		// Public : N, E
 	}
 
