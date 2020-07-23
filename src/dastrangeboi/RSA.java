@@ -106,12 +106,12 @@ public class RSA {
 		int Q = randomPrime(primesList);
 		
 		int N = P * Q;
-		int Ø = (P - 1) * (Q - 1);
+		int Ï† = (P - 1) * (Q - 1);
 		
 		// getting encryption number
 		int E = 0;
-		for (E = 2; E < Ø; E++) {
-			if (gcd(E, Ø) == 1) {
+		for (E = 2; E < Ï†; E++) {
+			if (gcd(E, Ï†) == 1) {
 				break;
 			}
 		}
@@ -119,7 +119,7 @@ public class RSA {
 		// getting decryption number
 		int D = 0;
 		while (true) {
-			if (((D * E) % Ø) == 1) {
+			if (((D * E) % Ï†) == 1) {
 				break;
 			}
 			D += 1;
@@ -139,7 +139,7 @@ public class RSA {
 		
 		return keys;
 		
-		// Private: P, Q, Ø, D
+		// Private: P, Q, Ã˜, D
 		// Public : N, E
 	}
 
